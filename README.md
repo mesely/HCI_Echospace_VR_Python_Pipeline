@@ -66,3 +66,14 @@ python -u build_reduced_yamnet.py
 
 
 Sonra:
+
+
+
+En son vanilya hal 
+cd /Users/mesely/449_pitonf/HCI_Echospace_VR_Python_Pipeline
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip certifi
+export SSL_CERT_FILE="$(python -m certifi)"
+echo "Using SSL_CERT_FILE=$SSL_CERT_FILE"
+pip install -r requirements.txt
